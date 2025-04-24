@@ -1,0 +1,14 @@
+[project]
+name = "k8s-cli"
+version = "0.1.0"
+description = "Kubernetes CLI for deployments, autoscaling, and health checks"
+authors = [{ name = "Aravind", email = "aravindjeevanadham@gmail.com" }]
+readme = "README.md"
+requires-python = ">=3.7"
+dependencies = [
+    "rich",
+    "pyyaml"
+]
+
+[project.scripts]
+k8s-cli = "bin.k8s_cli:main"
