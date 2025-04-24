@@ -3,3 +3,7 @@ __pycache__/
 dist/
 build/
 *.spec
+*.egg-info/
+venv/
+.env/
+linux-amd64/
