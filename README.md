@@ -14,36 +14,37 @@ This CLI script automates the process of connecting to a Kubernetes cluster, ins
 ## Installation
 
 1. Clone the repository.
-2. Install dependencies:
+2. Install cli:
     ```bash
-    pip install -r requirements.txt
+    cd k8s-cli
+    pip install .
     ```
 
 ## Usage
 
 ### Connect to Cluster
 ```bash
-python bin/k8s-cli --action connect
+k8s-cli --action connect
 ```
 
 ### Install Helm
 ```bash
-python bin/k8s-cli --action install-helm
+k8s-cli --action install-helm
 ```
 
 ### Install KEDA
 ```bash
-python bin/k8s-cli --action install-keda
+k8s-cli --action install-keda
 ```
 ### Create Deployment
 ```bash
-python bin/k8s-cli --action create-deployment --image <image_name> --cpu-limit <cpu_limit> --mem-limit <mem_limit> --ports <port1> <port2>
+k8s-cli --action create-deployment --image <image_name> --cpu-limit <cpu_limit> --mem-limit <mem_limit> --ports <port1> <port2>
 ```
 ### Create HPA
 ```bash
-python bin/k8s-cli --action create-hpa --deployment-id <deployment_name>
+k8s-cli --action create-hpa --deployment-id <deployment_name>
 ```
 ### Get Health Status
 ```bash
-python bin/k8s-cli --action get-health-status --deployment-id <deployment_name>
+k8s-cli --action get-health-status --deployment-id <deployment_name>
 ```

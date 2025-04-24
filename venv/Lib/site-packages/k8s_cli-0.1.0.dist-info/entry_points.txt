@@ -1,0 +1,2 @@
+[console_scripts]
+k8s-cli = bin.k8s_cli:main
